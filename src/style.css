@@ -1,0 +1,110 @@
+
+.contenedor{
+    /*display:flex;*/
+    width: 100%;
+    max-width: 1200px;
+   overflow: hidden; /*oculta lo que pasa en el borde*/
+   /*margin: auto; */
+}
+   
+   
+header{
+    /*background-image: linear-gradient(120deg, #fdfbfb9f 0%, #ebedee91 100%), url(img/Studio_Ghibli_logo2.svg.png);
+    background-repeat: no-repeat;
+    /*background-size:contain;*/
+    /*background-attachment: fixed;*/
+    width: 90%;
+    max-width: 1440px;
+    height: 400px;
+    background-color: darksalmon;
+    
+}
+.menu {
+    position:fixed;
+    top: 30px;
+    left: 30px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rbg 0 0 .5;
+}
+.menu-despegable{
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 20vw;
+    height: 40%;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f1fede 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /*transition:transform .3s ease-in-out; se hace con js para que desaparezca y aparezca el menu*/
+    transform: translate(-110%);
+}
+.spread{
+    transform: translate(0);
+}
+.menu-despegable a {
+    color: white;
+    text-decoration: none;
+}
+/*Esta especificacion da como comandoq ue en dispositivos mas pequeñps se muestre */
+@media(max-width:950px) {
+    body {
+        background-color: chartreuse;
+    }
+
+}
+
+
+.logo{
+    width: 100% ;
+    max-width: 1200px;
+    left: 25%;
+    margin-left: 360px;
+}
+
+.central-container{
+
+    padding: auto;
+    background-color: darkorchid;
+
+
+
+    
+
+
+    
+}
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 72px;
+    color: rgb(5, 5, 63);
+    bottom: 20%;
+}
+
+
+
+.movies{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20%;
+    background-color: aquamarine;
+    column-rule-style: double;
+    color:rgb(9, 9, 70);
+    border-radius: 10%;
+    margin: 0 auto;
+
+}
+
+.flex-container img{
+    width: 80px;
+    left: 80px;
+    border-color: rgb(3, 3, 3);
+    border-radius: 10%;
+    justify-content: space-between;
+}
