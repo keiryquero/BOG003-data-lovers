@@ -1,23 +1,22 @@
 
-.contenedor{
-    /*display:flex;*/
+/*.contenedor{
+   
     width: 100%;
-    max-width: 1200px;
-   overflow: hidden; /*oculta lo que pasa en el borde*/
-   /*margin: auto; */
-}
+    max-width: 1440px;
+    overflow: hidden; /*oculta lo que pasa en el borde*/
+    /*margin: 0 10; 
+}*/
    
    
 header{
-    /*background-image: linear-gradient(120deg, #fdfbfb9f 0%, #ebedee91 100%), url(img/Studio_Ghibli_logo2.svg.png);
+    background-image: linear-gradient(120deg, #fdfbfb9f 0%, #ebedee91 100%), url(img/Studio_Ghibli_logo2.svg.png);
     background-repeat: no-repeat;
-    /*background-size:contain;*/
-    /*background-attachment: fixed;*/
-    width: 90%;
+    background-size:contain;
+    background-attachment: fixed;
+    width: 100vw;
     max-width: 1440px;
-    height: 400px;
-    background-color: darksalmon;
-    
+    height: 700px;
+       
 }
 .menu {
     position:fixed;
@@ -42,7 +41,7 @@ header{
     justify-content: space-evenly;
     align-items: center;
     /*transition:transform .3s ease-in-out; se hace con js para que desaparezca y aparezca el menu*/
-    transform: translate(-110%);
+    transform: translate(100%);
 }
 .spread{
     transform: translate(0);
@@ -50,33 +49,99 @@ header{
 .menu-despegable a {
     color: white;
     text-decoration: none;
+
 }
-/*Esta especificacion da como comandoq ue en dispositivos mas pequeñps se muestre */
+
+.close-menu{
+    display: none;
+}
+/*Esta especificacion da como comando que en dispositivos mas pequeñps se muestre */
 @media(max-width:950px) {
-    body {
-        background-color: chartreuse;
+    .menu-despegable {
+        flex-direction: column;
+        position: fixed;
+        left:0 ;
+        top: 0;
+        width:100%;
+        align-items: center;
+        background-color: rgb(32, 213, 236);
+        height: 100%;
+        overflow-y: auto;
+
+        opacity: 0;
     }
 
+    .menu-despegable a{
+        line-height: 70px;
+        color: white;
+    }
+
+    .close-menu,
+    .open-menu{
+        display:block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .close-menu{
+        align-self: flex-end;
+        padding: 20px 15px ;
+    }
+    
 }
 
 
-.logo{
+
+
+
+
+/*.logo{
     width: 100% ;
     max-width: 1200px;
     left: 25%;
     margin-left: 360px;
-}
-
+}*/
+/*Empieza la parte central d ela pagina*/
 .central-container{
 
+    display: flex;
     padding: auto;
+    flex-direction: column;
     background-color: darkorchid;
+    bottom: 200px;
+    justify-content: space-around;
 
+}
 
+.central-container img{
 
+    border-radius: 15px;
+    width:80%;
+    max-width: 550px;
+    height: 350px;
+    align-items: center;
     
+}
 
+.central-container article{
 
+    font-family: 'Indie Flower', cursive;
+    justify-content:center;
+    font-size: 22px;
+    color: yellow;
+    text-align: center;
+}
+
+.central-container p{
+
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+    text-align: right;
+    
+    align-items: right;
+    max-width: 500px;
+    height: 350px;
     
 }
 h1 {
@@ -84,27 +149,62 @@ h1 {
     font-size: 72px;
     color: rgb(5, 5, 63);
     bottom: 20%;
+    text-align: center;
+    
 }
-
-
-
-.movies{
-    flex-direction: column;
+ .central-container .movies {
+    flex-direction:row;
     align-items: center;
     justify-content: space-between;
-    padding: 20%;
+    padding: 15%;
     background-color: aquamarine;
     column-rule-style: double;
     color:rgb(9, 9, 70);
     border-radius: 10%;
     margin: 0 auto;
+    bottom: 200px;
 
 }
 
-.flex-container img{
-    width: 80px;
+.movies img{
+    width: 180px;
     left: 80px;
     border-color: rgb(3, 3, 3);
     border-radius: 10%;
-    justify-content: space-between;
+    flex-direction: column;
+    
+}
+/*Prueba de responsive en la etiqueta central de la pagina*/
+@media (max-width:950px) {
+    .central-container {
+        
+        flex-direction: column;
+        text-align:center;
+    
+    }
+
+    .central-container img{
+
+            border-radius: 15px;
+            width:70%;
+            max-width: 400px;
+            height: 250px;
+            align-items: center;   
+     }
+    
+}
+
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+    flex-direction:row-reverse;
+    
+}
+footer img{
+    width: 150px;
+    height: 80px;
+    right: 900px;
+     bottom: 300px;
 }
