@@ -1,60 +1,13 @@
-.contenedor{
-   display:flex;
-   flex-wrap: nowrap;
-  background-color: rgb(230, 241, 252);
-   
+header{
+    background-image: linear-gradient(120deg, #fdfbfb9f 0%, #ebedee91 100%), url(img/Studio_Ghibli_logo2.svg.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment: fixed;
+    width: 100vw;
+    max-width: 1440px;
+    height: 700px;
+       
 }
-.central-container{
-  display:flex;
-  flex-direction: column;
-   
-   }
- .collage{
-   width: 50%;
-   height: 50%;
-  left: 80px;
-   border-color: rgb(3, 3, 3);
-   border-radius: 10%;
-   
- }  
- #descriptiom{
-   font-size: 20px;
-   font-family: Tahoma, Verdana, sans-serif;
-   font-style: italic;
-   
- }
- p{
-   font-size: 15px;
-   font-family: Tahoma, Verdana, sans-serif;
-   font-style: italic; 
- }
- .peliculas{
-    display:flex;
-    /*flex-wrap:wrap;*/
-    justify-content:space-around;
- }
- .peliculas h2{
-    align-items:center;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
- .peliculas img{
-    width:180px;
-    height: 180px;
-    border-color: black;
-    border-radius: 10%;
- }
- .columna1 {
-    background-color: lightgreen;
-    
- }
- .columna2 {
-    background-color: lightslategray;
-    
- }
- 
-
-
 .menu {
    position:fixed;
    top: 30px;
@@ -87,29 +40,147 @@
    color: white;
    text-decoration: none;
 }
-/*Esta especificacion da como comandoq ue en dispositivos mas pequeñps se muestre */
+.close-menu{
+    display: none;
+}
+/*Esta especificacion da como comando que en dispositivos mas pequeñps se muestre */
 @media(max-width:950px) {
-   body {
-       background-color: chartreuse;
-   }
+    .menu-despegable {
+        flex-direction: column;
+        position: fixed;
+        left:0 ;
+        top: 0;
+        width:100%;
+        align-items: center;
+        background-color: rgb(32, 213, 236);
+        height: 100%;
+        overflow-y: auto;
+        opacity: 0;
+    }
+
+    .menu-despegable a{
+        line-height: 70px;
+        color: white;
+    }
+
+    .close-menu,
+    .open-menu{
+        display:block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .close-menu{
+        align-self: flex-end;
+        padding: 20px 15px ;
+    }
+    
+}
+
+/*Empieza la parte central de la pagina*/
+.central-container{
+
+    display: flex;
+    padding: auto;
+    flex-direction: column;
+    background-color: darkorchid;
+    bottom: 200px;
+    justify-content: space-around;
 
 }
-.logo{
-   width: 100% ;
-   max-width: 1200px;
-   left: 25%;
-   margin-left: 360px;
+
+.central-container img{
+
+    border-radius: 15px;
+    width:80%;
+    max-width: 550px;
+    height: 350px;
+    align-items: center;
+    
 }
 
+.central-container article{
 
+    font-family: 'Indie Flower', cursive;
+    justify-content:center;
+    font-size: 22px;
+    color: yellow;
+    text-align: center;
+}
+
+.central-container p{
+
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+    text-align: right;
+    
+    align-items: right;
+    max-width: 500px;
+    height: 350px;
+    
+}
 h1 {
-   font-family: 'Indie Flower', cursive;
-   font-size: 72px;
-   color: rgb(5, 5, 63);
-   bottom: 20%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 72px;
+    color: rgb(5, 5, 63);
+    bottom: 20%;
+    text-align: center;
+    
 }
+.movies{
+    display:flex;
+    /*flex-wrap:wrap;*/
+    justify-content:space-around;
+ }
+ .movies h2{
+    align-items:center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .movies img{
+    width:180px;
+    height: 180px;
+    border-color: black;
+    border-radius: 10%;
+ }
+ .columna1 {
+    background-color: lightgreen;
+    
+ }
+ .columna2 {
+    background-color: lightslategray;
+    
+ }
+ 
+/*Prueba de responsive en la etiqueta central de la pagina*/
+@media (max-width:950px) {
+    .central-container {
+        
+        flex-direction: column;
+        text-align:center;
+    
+    }
+    .central-container img{
 
-
-
-
-
+            border-radius: 15px;
+            width:70%;
+            max-width: 400px;
+            height: 250px;
+            align-items: center;   
+     }
+    
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+    flex-direction:row-reverse;
+    
+}
+footer img{
+    width: 150px;
+    height: 80px;
+    right: 900px;
+     bottom: 300px;
+}
