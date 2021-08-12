@@ -8,6 +8,7 @@ header{
     height: 500px;
        
 }
+
 .prueba-menu{
     display:flex;
     justify-content: space-between;
@@ -49,14 +50,17 @@ header{
     margin-right: 50%;
     border-radius: 15px;
 
+
 }
 .spread{
-    transform: translate(0);
+   transform: translate(0);
 }
 .menu-despegable a {
+
     color: white;
     font-size: 18px;
     text-decoration: none;
+
 }
 .close-menu{
     display: none;
@@ -70,7 +74,7 @@ header{
     width:70%;
     max-width: 350px;
     height: 40px;
-}
+
 
 /*Empieza la parte central de la pagina*/
 .central-container{
@@ -124,6 +128,7 @@ h1 {
     text-align: center;
     
 }
+
 
 h2{
     font-size: 38px;
@@ -226,18 +231,33 @@ footer p{
         opacity: 1;
         pointer-events: all;
     }
-    .central-container {
-        
-        flex-direction: column;
-        text-align:center;
+  
+.movies{
+    display:flex;
+    /*flex-wrap:wrap;*/
+    justify-content:space-around;
+ }
+ .movies h2{
+    align-items:center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .movies img{
+    width:180px;
+    height: 180px;
+    border-color: black;
+    border-radius: 10%;
+ }
+ .columna1 {
+    background-color: lightgreen;
     
-    }
+ }
+ .columna2 {
+    background-color: lightslategray;
+    
+ }
+ 
 
-    .central-container img{
-            max-width: 200px;
-            height: 150px;
-            align-items: center;   
-     }
      @media screen and (max-width:500px) {
 
         .h1{
@@ -260,6 +280,4 @@ footer p{
     
          
      }
-    
-
-}
+   

@@ -1,3 +1,4 @@
+
 import { ghibli } from './data.js';
 
 import data from './data/ghibli/ghibli.js';
@@ -39,3 +40,4 @@ function toggleMenu(){
 }
 openMenuBtn.addEventListener("click",toggleMenu);
 closeMenuBtn.addEventListener("click",toggleMenu);*/
+
