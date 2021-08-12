@@ -1,6 +1,6 @@
 // estas funciones son de ejemplo
 
-export const ghiblin = () => {
+export const ghibli = () => {
   return 'hello';
 };
 
