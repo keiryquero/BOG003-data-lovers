@@ -75,17 +75,23 @@ header{
         align-self: flex-end;
         padding: 20px 15px ;
     }
+    .central-container p{
+
+        font-family:Verdana, Geneva, Tahoma, sans-serif, cursive;
+        font-size: 30px;
+        /*text-align: right;
+        align-items: right;*/
+        max-width: 350px;
+        height: 150px;
+    }
     
 }
 
 /*Empieza la parte central de la pagina*/
 .central-container{
-
     display: flex;
-    padding: auto;
-    flex-direction: column;
-    background-color: darkorchid;
-    bottom: 200px;
+    flex-wrap: wrap;
+    bottom: 600px;
     justify-content: space-around;
 
 }
@@ -94,9 +100,9 @@ header{
 
     border-radius: 15px;
     width:80%;
-    max-width: 550px;
-    height: 350px;
-    align-items: center;
+    max-width: 600px;
+    height: 300px;
+    
     
 }
 
@@ -129,14 +135,16 @@ h1 {
     
 }
 .movies{
-    display:flex;
-    /*flex-wrap:wrap;*/
-    justify-content:space-around;
+   display:flex;
+   flex-wrap: wrap;
+   background-color:#6Af2F0;
+   border-radius: 10%;
+   
  }
- .movies h2{
-    align-items:center;
-    font-size: 20px;
+ h2{
+    font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 6px solid rgb(5, 5, 63);
  }
  .movies img{
     width:180px;
@@ -145,11 +153,19 @@ h1 {
     border-radius: 10%;
  }
  .columna1 {
-    background-color: lightgreen;
-    
+    display: flex;
+    flex-grow: 8;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 5%;
+           
  }
- .columna2 {
-    background-color: lightslategray;
+  .columna2 {
+    flex-grow: 8;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 5%;
     
  }
  
@@ -165,11 +181,29 @@ h1 {
 
             border-radius: 15px;
             width:70%;
-            max-width: 400px;
-            height: 250px;
+            max-width: 200px;
+            height: 100px;
             align-items: center;   
      }
+     .central-container p{
+
+        font-family: 'Indie Flower', cursive;
+        font-size: 20px;
+        text-align: right;
+        
+        align-items: right;
+        max-width: 500px;
+        height: 350px;
+        
+    }
     
+}
+#vista2{
+    display:none;
+}
+#siguiente{
+    font-size: 20px;
+    margin-left: 20%;
 }
 footer{
     width: 100%;
