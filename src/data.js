@@ -1,47 +1,27 @@
-// estas funciones son de ejemplo
-
-/*export const ghibli = (studio) => {
-   
-  return "hello"
-};*/
-  
- export {card1} 
-  
-      function card1(films){
-    document.getElementById("container").innerHTML = "";
-    //1. recorre el array de Films 
-    for(var i = 0; i < films.length; i++){
-      let title = films [i].title;
-      let year= films [i].release_date;
-      let poster= films [i].poster;
-      let description= films[i].description;
-     /*console.log(title,year,poster, description);*/
-     
-     /* Toma el elemento container y lo sustituye por nuevos elementos, acumulando 
-     los elementos para mostrarlo en el documento */
-     document.getElementById("container").innerHTML +=`
-     <div>
-     <img src = ${poster}>
-     <h3>${title}</h3>
-     <p>${year}</p>
-     <p>${description}</p>
-     </div>`
-    }
-    return card1;
-   }
 
 export const anotherExample = () => {
   return 'OMG';
 };
-
-export {ordenarPeliculas}
-
-function ordenarPeliculas(films){
-  let puntaje= films.filter((films) => {
-    return films.release_date < 2000;
-  });
-    
-  return puntaje;
+// intento 1 de crear el filter para ordenar las peliculas
+export function ordenarPeliculas(films){ 
+  let mayorMenor= films.filter((films) => films.release_date < 2000 );
+  // console.log(mayorMenor)
+  return mayorMenor;
 }
 
 
+//prueba con arrow funtion
+export const ordenPorFecha = (data) => {
+   data.sort((year1, year2) => year2.release_date - year1.release_date
+   )};
+//console.log(ordenPorFecha );
+
+
+
+/*export function ordenPorFecha2(date){
+
+  let years= date.sotr((year1, year2) => {
+  return year1.release_date > year2.release_date
+
+  
+   } )}*/

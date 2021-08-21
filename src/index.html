@@ -17,16 +17,16 @@
   </header>
 
   <section class="prueba-menu">
-    <button id="btn" class="open-menu" aria-label="Abrir menú">
+   <!-- <button id="btn" class="open-menu" aria-label="Abrir menú">
       <img src="img/bx-menu (1).svg" alt="menu" class="menu">
-    </button>
+    </button>-->
     <nav class="menu-despegable">
       <button class="close-menu" aria-label="Cerrar menú">
         <img src="img/bx-x.svg" alt="Cerrar menú">
       </button>
-      <li id="link1"><a href="#">Inicio</a></li>
+      <li id="link1"><a href="#Inicio">Inicio</a></li>
       <li id="link2"><a href="#catalogo">Catálogo </a></li>
-      <li id="link3"><a href="#h2">Top películas famosas</a></li>
+      <li id="link3"><a href="#Top películas famosas">Top películas famosas</a></li>
       <li id="link4"><a href="#">Productores</a></li>
       <li id="link4"><a href="#">Datos curiosos</a></li>
       <li id="link6"><a href="#">Enlaces de interes</a></li>
@@ -35,7 +35,7 @@
       <input class="flexsearch--input" type="search" placeholder="search">
       <img class="lupa" src="img/bx-search-alt.svg" alt="">
       </form>-->
-      <img class="carbon"src="img/totorocarbon.png" alt="">
+    <img class="carbon" src="img/totorocarbon.png" alt="">
   </section>
   <section id="cabecera">
     <main class="central-container">
@@ -53,7 +53,7 @@
         Fuente:https://studioghibli.fandom.com/es/wiki/Studio_Ghibli</p>
     </main>
 
-    <h2>TOP PELÍCULAS FAMOSAS</h2>
+    <h2>10 PELÍCULAS PARA CONOCER STUDIO GHIBLI</h2>
     <section class="movies">
       <div class="columna1">
         <img src="https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Spirited_Away.png" alt="Puesto 1">
@@ -86,17 +86,27 @@
     </section>
   </section>
 
-  <!--<button id="siguiente" type="button">Catálogo</button>-->
 
-  <Section id="catalago"  style="display:none;">
+  <!-- inicia segunda vista-->
+  <Section id="catalago" style="display:none;">
     <h1>Catálogo de películas</h1>
-    
-    <button id="filtro" type="button">filtro</button>
-    <div id="container" class ="container">
-      
-     </div>
+    <button id="filtro" type="button">Películas antes del año 2000</button>
+    <button id="ascente" type="button">Películas de 2000 al presente</button>
 
+    <div id="container" class="container">
+    </div>
   </Section>
+
+  <!-- inicia tercera vista-->
+  <section class="topPeliculas" id="topPeliculas"style="display:none;">
+    <div class="title">
+      <h1>TOP 10 PELÍCULAS MÁS FAMOSAS DE GHIBLI</h1>
+    </div>
+    <div id="ranking" class="ranking">
+      helllos
+    </div>
+   </section>
+
 
   <footer class="headboard">
     <P classs="copy">Copyright © 2021 | Conociendo Studio Ghibli SA</P>

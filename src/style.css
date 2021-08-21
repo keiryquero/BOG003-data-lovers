@@ -66,7 +66,6 @@ header{
     box-shadow: 0 0 6px rgb(0, 0, .5);*/
 
 }
-
 .spread{
     transform: translate(0);
 }
@@ -208,7 +207,7 @@ footer p{
     left: 80px;
     align-items: flex-start;
 }
-/*Prueba segunda vista HU2*/
+/*Segunda vista HU2*/
 
 .container{
     display: flex;
@@ -216,11 +215,80 @@ footer p{
     background-color:#6AF2F0;
     justify-content:space-between;
     align-items: flex-start;
-    margin-block-start: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 20px;
       
 }
+.container img{
 
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 8px 8px 8px rgba(2, 34, 66, 0.603);
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+}
+.container h3{
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;
+    color: #0e6c97; 
+    margin-left: 10px;
+}
+.container p{
 
+    font-size: 22px;
+    margin-left: 10px;
+}
+/*Tercera vista HU3*/
+
+.topPeliculas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+    margin-left: auto;
+}
+
+.topPeliculas .ranking{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    width: 90%;    
+    height: 90%;
+    
+    }
+.ranking img{
+
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0 8px 8px 8px rgba(2, 34, 66, 0.603);
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.ranking h3{
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;
+    color: #0e6c97; 
+    margin-left: 10px;
+}
+.ranking h4{
+
+    font-size: 22px;
+    margin-left: 10px;
+}
+.ranking p {
+
+    text-orientation: sideways;
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+}
 
 /*Prueba de responsive en la pagina*/
 @media (max-width:900px) {
@@ -228,7 +296,7 @@ footer p{
        
     .menu-despegable {
         flex-direction: column;
-        padding: 80%;
+        /*padding: 80%;*/
        /* left:0;
         top: 0;*/
         text-align:center;
