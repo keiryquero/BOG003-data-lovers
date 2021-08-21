@@ -11,6 +11,7 @@ header{
     height: 700px;
        
 }
+
 .prueba-menu{
     display:flex;
     justify-content: space-between;
@@ -67,9 +68,10 @@ header{
 
 }
 .spread{
-    transform: translate(0);
+   transform: translate(0);
 }
 .menu-despegable a {
+
     color: white;
     font-size: 26px;
     text-decoration: none;
@@ -137,6 +139,7 @@ h1 {
     text-align: center;
     
 }
+
 
 h2{
     font-size: 38px;

@@ -60,10 +60,7 @@ document.getElementById("link3").addEventListener("click", () => {topPelis(data)
 
 });
 
-
-
-
- /*Retorna a la pagina principal*/
+git /*Retorna a la pagina principal*/
 
 document.getElementById("link1").addEventListener("click", () => {
     document.getElementById("catalago").style.display = "none"
