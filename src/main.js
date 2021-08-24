@@ -1,11 +1,13 @@
 import { filtroPeliculas } from './data.js';
 import { ordenarAño } from './data.js';
-//import { reduceData } from './data.js';
+import { reduceData } from './data.js';
+
 import studio from './data/ghibli/ghibli.js';
 let films = studio.films;
 
 function tarjeta1(films) {
 //1. recorre el array de Films 
+
   document.getElementById("container").innerHTML= "";
   const contenedorTarjeta = document.createElement("div");
 
@@ -39,6 +41,7 @@ function tarjeta1(films) {
   return contenedorTarjeta;
 };
 
+
 // Invoca la funcion tarjeta1
 document.getElementById("link2").addEventListener("click", () => {
 document.getElementById("container").appendChild(tarjeta1(films));
@@ -48,6 +51,7 @@ const filtrarPeliculas = filtroPeliculas(films);
 document.getElementById("filtro").addEventListener("click", () => {
 document.getElementById("container").appendChild(tarjeta1(filtrarPeliculas));
 });
+
 //invoca funcion Sort
 let ordenar= ordenarAño(films);
 tarjeta1(ordenar);
@@ -64,6 +68,7 @@ document.getElementById("catalogo").style.display = "block"
 document.getElementById("topPeliculas").style.display = "none"
 });
 //Retorna a la pagina Principal
+
 
 document.getElementById("link1").addEventListener("click", () => {
   document.getElementById("cabecera").style.display = "block"
@@ -88,3 +93,4 @@ document.getElementById("link1").addEventListener("click", () => {
     <p>${year}</p>
     </div>`*/
     //a los elemntos se le está asignando las variables
+

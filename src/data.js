@@ -1,6 +1,6 @@
 // Funcion filter, para filtrar las peliculas menores al año 2000
 export function filtroPeliculas(films){ 
-  let mayorMenor= films.filter((films) => films.release_date < 2000 );
+   let mayorMenor= films.filter((films) => films.release_date < 2000 );
   //console.log(mayorMenor)
   return mayorMenor;
 };
@@ -19,6 +19,7 @@ export function filtroPeliculas(films){
   return ordenar;
 
 };*/
+
 
 
 
