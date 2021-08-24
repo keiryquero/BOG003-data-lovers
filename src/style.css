@@ -1,67 +1,79 @@
+* {
+    padding:0;
+    width: auto;
+    height: auto;
+    margin:0;
+}
+
+body{
+    margin:0;
+
+}
+
 header{
     background-image: linear-gradient(120deg, #fdfbfb9f 0%, #ebedee91 100%), url(img/Studio_Ghibli_logo2.svg.png);
     background-repeat: no-repeat;
-    background-size:contain;
-    background-attachment: fixed;
+    background-size:contain;/*fija el header*/
+    background-attachment: fixed;/*permite que la pagina pase por encima*/
     width: 100vw;
     max-width: 1440px;
-    height: 500px;
+    height: 700px;
        
 }
 
-.prueba-menu{
+.container-menu{
     display:flex;
     justify-content: space-between;
     /*position: fixed;*/    
-    background-color: #059dc0;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f1fede 100%);
     width: 100%;
     max-width: 1440px;
-    height:100px;
+    height:80px;
     border-radius: 15px;
     box-shadow: 0 5px 5px rgba(120, 121, 122, 0.603);
 
 }
-.prueba-menu menu {
+/*estilo  para el icono del menu hamburguesa
+.prueba-menu .menu {
     padding: 10px;
-    top: 10px;
-    left: 10px;
-    background-color: white;
+    top: 0px;
+    left: 0px;
     width: 45px;
     height: 35px;
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 5px rbg 0 0 .5;
-}
-.prueba-menu .menu-despegable{
-    /*position: fixed;*/
-    padding: 50px;
-    top: 0;
-    left: 0;
-    width: 20%;
-    height: 40%;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f1fede 100%);
+}*/
+.container-menu .menu-despegable{
     display: flex;
-    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items:center;
-    box-shadow: 0 0 6px rgb(0, 0, .5);
-    transition:transform .3s ease-in-out; /*se hace con js para que desaparezca y aparezca el menu*/
-    transform: translate(1%);
-    margin-right: 50%;
-    border-radius: 15px;
-
+    list-style: none;
+    transition: all o.3s;
+ 
 
 }
+
+/* permite transformarel menu en los dispositivos móviles
 .spread{
    transform: translate(0);
-}
+}*/
 .menu-despegable a {
-
     color: white;
-    font-size: 18px;
+    font-size: 26px;
     text-decoration: none;
+    border-radius: 10px;
+    box-shadow:  #4facfe;
+}
+.container-menu .carbon{
+    width: 100px;
+    height: 80px ;
 
 }
+/*para que no aparezca la x */
 .close-menu{
     display: none;
 }
@@ -69,56 +81,37 @@ header{
     opacity: 1;
     pointer-events: all
 }
-.flexsearch--input{
-    border-radius: 15px;
-    width:70%;
-    max-width: 350px;
-    height: 40px;
-
-
-}
 
 /*Empieza la parte central de la pagina*/
 .central-container{
-    display: flex;
-    flex-wrap: wrap;
-    /*background-color: darkorchid;*/
+    display: flex;  
+    flex-wrap: wrap;  
     bottom: 50px;
     justify-content: space-around;
     width: 100%;
     max-width: 1440px;
     height: 700px;
     margin-top: 10%;
-
 }
 
 .central-container img{
 
     border-radius: 15px;
     width:50%;
-    max-width: 450px;
-    height: 250px;
-    align-items: center;
+    max-width: 650px;
+    height: 350px;
+    align-items: flex-start;  
     
-}
-
-.central-container article{
-
-    font-family: 'Indie Flower', cursive;
-    justify-content:center;
-    font-size: 26px;
-    color: darkblue;
-    text-align: center;
 }
 
 .central-container p{
 
     font-family: 'Indie Flower', cursive;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
     align-items:flex-end;
-    max-width: 400px;
-    height: 350px;
+    max-width: 500px;
+    height: 380px;
       
 }
 h1 {
@@ -135,8 +128,11 @@ h2{
     font-size: 38px;
     font-family: 'Indie Flower', cursive;
     color: rgb(5, 5, 63);
-   
-}
+    border-bottom: 6px solid rgb(5, 5, 63);
+    margin-left: 50px ;
+ }
+    
+
  .movies{
     display:flex;
     flex-wrap: wrap;
@@ -166,6 +162,14 @@ h2{
     margin-top: 5%;
     
  }
+
+#catalogo{
+    display:none;
+}
+#topPeliculas{
+    display:none;
+}
+ 
 /*Empieza la parte del footer*/
 footer{
     display: flex;
@@ -199,19 +203,58 @@ footer p{
     left: 80px;
     align-items: flex-start;
 }
+/*Prueba segunda vista HU2*/
+
+
+
+.container{
+    display: flex;
+    flex-wrap:wrap;
+    background-color:#6AF2F0;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin-block-start: 10px;
+      
+}
+.container img{
+    width:300px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow:0 10px 10px 10px darkgray;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 22px;
+    
+}
+.container h3{
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;   
+    color: midnightblue;
+    margin-left: 10px;
+}
 
 /*Prueba de responsive en la pagina*/
-@media (max-width:800px) {
+@media (max-width:900px) {
+    
+       
     .menu-despegable {
         flex-direction: column;
-        left:0;
-        top: 0;
+        padding: 80%;
+       /* left:0;
+        top: 0;*/
+        text-align:center;
         width:100%;
+        max-width: 900px;
         align-items: center;
         background-color: rgb(32, 213, 236);
-    
+        display: block ;
+        color:white;
+        margin-left: 0%;
+               
     }
-
+.menu-despegable:hover{
+    background-color:rgb(200, 240, 240);
+}
     .menu-despegable a{
         line-height: 70px;
         color: white;
@@ -232,64 +275,86 @@ footer p{
         opacity: 1;
         pointer-events: all;
     }
-
-    .movies{
-    display:flex;
-    flex-wrap: wrap;
-    background-color:#6Af2F0;
-    border-radius: 10%;
-    
-    }
-    h2{
-        font-size: 30px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        border-bottom: 6px solid rgb(5, 5, 63);
-    }
-    .movies img{
-        width:180px;
-        height: 180px;
-        border-color: black;
-        border-radius: 10%;
-    }
-    .columna1 {
+    .central-container {
         display: flex;
-        flex-grow: 8;
-        flex-direction: column;
-        margin-left: 10%;
-        margin-top: 5%;
-            
-    }
-    .columna2 {
-        flex-grow: 8;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 10%;
-        margin-top: 5%;
-        
+        flex-direction:row;
+        width: 100% ;
+        max-width: 900px;
+           
     }
 
-}
-@media screen and (max-width:500px) {
+    .central-container img{
+            max-width: 200px;
+            height: 150px;
+            align-items: center;  
 
-    .h1{
-        font-family: 'Indie Flower', cursive;
-        font-size: 22px;  
-    }
-
-    .h2{
-        font-family: 'Indie Flower', cursive;
-        font-size: 18px;  
-
-    }
+     }
 
     .central-container p{
 
         font-family: 'Indie Flower', cursive;
         font-size: 12px;  
-    
+        max-width: 200px;
+        height: 150px;
+        
     }
+    .container{
+        flex-direction: column;
 
-    
-}
+    }
+    }
+/*Prueba de responsive para dispositivos movil*/
+@media screen and (max-width:500px) {
 
+        .h1{
+            font-family: 'Indie Flower', cursive;
+            font-size: 22px;  
+        }
 
+        .h2{
+            font-family: 'Indie Flower', cursive;
+            font-size: 18px;  
+
+        }
+
+    .central-container{
+        display: flex;
+        width: 100%;
+        max-width: 500px;
+    }
+        .central-container img{
+            width: 150px;
+            height: 80px;
+        }
+        .central-container p{
+
+            font-family: 'Indie Flower', cursive;
+            font-size: 11px;  
+            width: 150px;
+            height: 80px;
+        
+        }
+
+        .prueba-menu{
+            width: 100%;
+
+        }
+
+        .prueba-menu .menu-despegable{
+            text-align: center;
+            width: 100%;
+        }
+        .menu-despegable {
+            flex-direction: column;
+            padding: 0;
+           /* left:0;
+            top: 0;*/
+            text-align:center;
+            width:100%;
+            max-width: 500px;
+            align-items: center;
+            background-color: rgb(32, 213, 236);
+            display: block;
+        }    
+         
+     }
