@@ -3,26 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-<<<<<<< HEAD
   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-  <title>Data Lovers</title>
-=======
-  <title>Conociendo Estudio Ghibli</title>
->>>>>>> a77347519a3550a96fe9cf4887b6a683cbda684f
+  <title>Conociendo Studio Ghibli</title>
   <link rel="stylesheet" href="style.css" />
-  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-  <header class="headboard">
+  <header>
   </header>
-
-  <section class="prueba-menu">
-   <!-- <button id="btn" class="open-menu" aria-label="Abrir menú">
+  <section class="container-menu">
+    <!-- <button id="btn" class="open-menu" aria-label="Abrir menú">
       <img src="img/bx-menu (1).svg" alt="menu" class="menu">
     </button>-->
     <nav class="menu-despegable">
@@ -31,22 +25,18 @@
       </button>
       <li id="link1"><a href="#Inicio">Inicio</a></li>
       <li id="link2"><a href="#catalogo">Catálogo </a></li>
-      <li id="link3"><a href="#Top películas famosas">Top películas famosas</a></li>
-      <li id="link4"><a href="#">Productores</a></li>
-      <li id="link4"><a href="#">Datos curiosos</a></li>
-      <li id="link6"><a href="#">Enlaces de interes</a></li>
+      <li id="link3"><a href="#Toppeliculasfamosas">Top películas famosas</a></li>
+      <li id="link4"><a href="#Productores">Productores</a></li>
+      <li id="link5"><a href="#Datoscuriosos">Datos curiosos</a></li>
+      <li id="link6"><a href="#Enlacesdeinteres">Enlaces de interes</a></li>
     </nav>
-    <!--<form class="flexsearch--form" action="#" method="post">
-      <input class="flexsearch--input" type="search" placeholder="search">
-      <img class="lupa" src="img/bx-search-alt.svg" alt="">
-      </form>-->
     <img class="carbon" src="img/totorocarbon.png" alt="">
   </section>
+  <!-- inicia primera vista-->
   <section id="cabecera">
     <main class="central-container">
       <h1>CONOCIENDO STUDIO GHIBLI</h1>
       <img class="collage" src="img/Studio.jpg" alt="Logo superior">
-
       <p>Studio Ghibli (スタジオジブリ Sutajio Jiburi?) es un estudio de animación japonés, con sede en Tokio. Fue fundada en
         1985 por Hayao Miyazaki y Isao Takahata, y a día de hoy, han realizado más de 20 películas, además de otras
         clases
@@ -90,36 +80,28 @@
       </div>
     </section>
   </section>
-
-
   <!-- inicia segunda vista-->
-  <Section id="catalago" style="display:none;">
+  <section id="catalago">
     <h1>Catálogo de películas</h1>
     <button id="filtro" type="button">Películas antes del año 2000</button>
-    <button id="ascente" type="button">Películas de 2000 al presente</button>
-
-    <div id="container" class="container">
-    </div>
-  </Section>
-
+    <div id="container" class="container"></div>
+  </section>
   <!-- inicia tercera vista-->
-  <section class="topPeliculas" id="topPeliculas"style="display:none;">
+  <section  id="topPeliculas" class="topPeliculas">
     <div class="title">
       <h1>TOP 10 PELÍCULAS MÁS FAMOSAS DE GHIBLI</h1>
+      <button id="btn" type="button">Reduce</button>
     </div>
-    <div id="ranking" class="ranking">
-      helllos
-    </div>
-   </section>
-
-
+    <div id="ranking" class="ranking"></div>
+  </section>
+ <!-- inicia footer -->
   <footer class="headboard">
-    <P classs="copy">Copyright © 2021 | Conociendo Studio Ghibli SA</P>
+    <p classs="copy">Copyright © 2021 | Conociendo Studio Ghibli SA</p>
     <img class="totorosombrilla" src="img/totorosombrilla.png" alt="">
-
     <img class="sn" src="img/redessociales.png" alt="redes sociales">
   </footer>
-<div id="root"></div>
-<script src="main.js" type="module"></script>
+
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
 </body>
 </html>

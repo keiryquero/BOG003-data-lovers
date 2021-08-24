@@ -1,23 +1,97 @@
-import { example, anotherExample } from '../src/data.js';
+import { filtroPeliculas, ordenarAño } from '../src/data.js';
 
+let dataMovies = [
+  {
+    "title": "My Neighbor Totoro",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
+    "release_date": "1988",
+    "rt_score": "93",
+  },
+  {
+    "title": "Only Yesterday",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a9/Only_Yesterday.jpg",
+    "release_date": "1991",
+    "rt_score": "100",
+  },
+  {
+    "title": "Spirited Away",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Spirited_Away.png",
+    "release_date": "2001",
+    "rt_score": "97",
+  },
+  {
+    "title": "The Tale of the Princess Kaguya",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Tale_of_the_Princess_Kaguya.jpg",
+    "release_date": "2013",
+    "rt_score": "100",
+  }
 
-describe('example', () => {
+]
+
+let moviesFiltradas= [
+  {
+    "title": "My Neighbor Totoro",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
+    "release_date": "1988",
+    "rt_score": "93",
+  },
+  {
+    "title": "Only Yesterday",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a9/Only_Yesterday.jpg",
+    "release_date": "1991",
+    "rt_score": "100",
+  }
+  
+]
+
+let moviesOrdenar =[
+  
+  {
+    "title": "The Tale of the Princess Kaguya",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Tale_of_the_Princess_Kaguya.jpg",
+    "release_date": "2013",
+    "rt_score": "100",
+  },
+  {
+    "title": "Spirited Away",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Spirited_Away.png",
+    "release_date": "2001",
+    "rt_score": "97",
+  },
+  {
+    "title": "Only Yesterday",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a9/Only_Yesterday.jpg",
+    "release_date": "1991",
+    "rt_score": "100",
+  },
+  {
+    "title": "My Neighbor Totoro",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
+    "release_date": "1988",
+    "rt_score": "93",
+  }
+]
+
+describe('filtroPeliculas', () => {
+
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filtroPeliculas).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('Deberia retornar las películas menores al año 2000  `filtroPeliculas`', () => {
+    expect(filtroPeliculas(dataMovies)).toEqual(moviesFiltradas);
   });
+  
+  
 });
 
 
-describe('anotherExample', () => {
+describe('ordenarAño', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof ordenarAño).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('deberia mostrar el orden de las películas por el año de mayor a menor `ordenarAño`', () => {
+    expect(ordenarAño(dataMovies)).toEqual(moviesOrdenar);
   });
 });
