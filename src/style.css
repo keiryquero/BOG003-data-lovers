@@ -29,7 +29,7 @@ header{
     height:80px;
     border-radius: 15px;
     box-shadow: 0 5px 5px rgba(120, 121, 122, 0.603);
-    margin-left: 20px;
+   
 
 }
 .container-menu menu {
@@ -146,6 +146,7 @@ h1 {
     color: rgb(5, 5, 63);
     top: 15px;
     text-align: center;
+    justify-content: center;
 
     
 }
@@ -225,36 +226,61 @@ footer p{
 }
 .container{
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     background-color:#6AF2F0;
     justify-content:space-between;
-    align-items: flex-start;
+    /*align-items: flex-start;*/
     margin-left: 15px;
     margin-right: 15px;
     border-radius: 20px;
-      
+    margin-top:50px;
+}
+.container div{
+    
+    flex-flow: wrap;
+    justify-content:space-between;
+    
 }
 .container img{
 
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border-radius: 15px;
     box-shadow: 0 8px 8px 8px rgba(2, 34, 66, 0.603);
     margin-left: 10px;
-    margin-right: 10px;
-    
+    margin-right: 10px;   
+    margin-bottom: 10px; 
+    margin-top: 10px;
     
 }
 .container h3{
     font-family: 'Indie Flower', cursive;
-    font-size: 22px;
+    font-size: 26px;
     color: #0e6c97; 
-    margin-left: 10px;
+    margin-left: 10px;    
+    margin-bottom: 10px; 
+}
+.container h4{
+    font-size: 22px;
+    margin-left: 10px;    
+    margin-bottom: 10px;
 }
 .container p{
 
     font-size: 22px;
-    margin-left: 10px;
+    margin-left: 10px;    
+    margin-bottom: 10px; 
+}
+#filtro{
+    border-radius: 15px;
+    width: 40%;
+    max-width: 310px;
+    height: 40px;
+    font-size: 22px;
+    margin-top: 10px;
+    color: black;
+    background-image: linear-gradient(to right, #738fa88c 0%, #00f1fea4 100%);
+
 }
 /*Tercera vista HU3*/
 #topPeliculas{
@@ -262,35 +288,68 @@ footer p{
 }
 .topPeliculas{
     display: flex;
-    flex-wrap: wrap;
-    width: 1440px;
-    margin-left: auto;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    /*align-items: flex-start;*/
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 20px;
+    
 }
 
-.topPeliculas .ranking{
+.topPeliculas  article{
+    font-family: 'Indie Flower', cursive;
+    font-size: 24px;
+    color: #0e6c97; 
+    margin-left: 50px;
+    margin-top: 10px;
+    float: left;
+   
+}    
+.topPeliculas img{
+   display: flex;
+   justify-items: right;
+   /*float: right;*/
+    width: 280px;
+    height: 180px;
+    
+}
+.ranking{
     display: flex;
     justify-content:space-between;
     flex-wrap: wrap;
-    background-color: rgb(117, 231, 193);
-    width: 90%;    
-    height: 90%;
+    background-color:#059ec0ce;
+    width: 100%;    
+    max-width: 1440px;
+    margin-top: 20px;
+    border-radius: 15px;
+    
+    
     
     }
+
+.ranking div{
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-items: auto;
+    flex-wrap: wrap;
+}
 .ranking img{
-    align-items: flex-start;
-    width: 150px;
-    height: 150px;
+    align-items: auto;
+    width: 250px;
+    height: 250px;
     border-radius: 15px;
-    box-shadow: 0 8px 8px 8px rgba(2, 34, 66, 0.603);
-   
+    box-shadow: 0 8px 8px 8px rgba(2, 34, 66, 0.603);  
+    margin-top: 20px;
+    margin-left: 10px; 
     
 }
-
 .ranking h3{
     font-family: 'Indie Flower', cursive;
-    font-size: 22px;
-    color: #0e6c97; 
+    font-size: 24px;
+    color: white; 
     margin-left: 10px;
+    margin-top: 10px;
 }
 .ranking h4{
 
@@ -302,7 +361,21 @@ footer p{
     text-orientation: sideways;
     width: 250px;
     height: 250px;
+    font-size: 18px;
     margin-left: 10px;
+}
+#btn{
+    border-radius: 15px;
+    width: 40%;
+    max-width: 200px;
+    height: 40px;
+    font-size: 22px;
+    margin-top: 10px;
+    color: black;
+    background-image: linear-gradient(to right, #738fa88c 0%, #00f1fea4 100%);
+    align-items: center;
+    justify-content: center;
+
 }
 
 /*Prueba de responsive en la pagina*/

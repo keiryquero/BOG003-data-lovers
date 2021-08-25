@@ -55,6 +55,7 @@ tarjeta1(ordenar);
 // invoca la función reduce
 document.getElementById("link3").addEventListener("click", () => {
 document.getElementById("ranking").appendChild(tarjeta1(films))
+document.getElementById("ranking").innerHTML = "";
 });
 
 const pruebafilter = reduceData(films)

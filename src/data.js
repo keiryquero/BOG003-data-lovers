@@ -11,5 +11,5 @@ export const ordenarAño = (films) => {
 
 // prueba con reduce = promedio de las peliculas
 export const reduceData = (films) => {
-  return films.filter((films) => films.rt_score >= 90)
+  return films.filter((films) => films.rt_score >= 93).sort((rt,rt1) => rt1.rt_score - rt.rt_score);
 };
