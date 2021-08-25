@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     width: auto;
@@ -8,17 +9,19 @@
 body{
     margin: 0;
 }
+
 header{
     background-image: linear-gradient(120deg, #fdfbfb9f 0%, #ebedee91 100%), url(img/Studio_Ghibli_logo2.svg.png);
     background-repeat: no-repeat;
-    background-size:contain;
-    background-attachment: fixed;
+    background-size:contain;/*fija el header*/
+    background-attachment: fixed;/*permite que la pagina pase por encima*/
     width: 100vw;
     max-width: 1440px;
     height: 700px;
     margin-left: 20px;
-       
+     
 }
+
 .container-menu{
     display:flex;
     justify-content: space-between;
@@ -32,7 +35,10 @@ header{
    
 
 }
-.container-menu menu {
+
+/*estilo  para el icono del menu hamburguesa
+.prueba-menu .menu {
+
     padding: 10px;
     top: 0px;
     left: 0px;
@@ -41,19 +47,15 @@ header{
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 5px rbg 0 0 .5;
-}
-/*.prueba-menu .menu-despegable{
-    /*position: fixed;
-    padding: 50px;
-    top: 0;
-    left: 0;
-    width: 20%;
-    height: 40%;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f1fede 100%);
+
+.container-menu .menu-despegable{
     display: flex;
-    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items:center;
+
     box-shadow: 0 0 6px rgb(0, 0, .5);
     transition:transform .3s ease-in-out; /*se hace con js para que desaparezca y aparezca el menu
     transform: translate(1%);
@@ -74,22 +76,29 @@ header{
     /*border-radius: 15px;
     box-shadow: 0 0 6px rgba(78, 78, 236, 0.637);*/
 
+
 }
+
+/* permite transformarel menu en los dispositivos móviles
 .spread{
    transform: translate(0);
-}
+}*/
 .menu-despegable a {
-
     color: white;
+
     font-size: 32px;
     text-decoration: none;
     border-radius: 10px;
     box-shadow: #58728a;
+
 }
 .container-menu .carbon{
     width: 100px;
     height: 80px ;
+
+
 }
+/*para que no aparezca la x */
 .close-menu{
     display: none;
 }
@@ -97,6 +106,7 @@ header{
     opacity: 1;
     pointer-events: all
 }
+
 /*.flexsearch--input{
     border-radius: 15px;
     width:70%;
@@ -111,13 +121,13 @@ header{
     flex-wrap: wrap;
     /*background-color: darkorchid;*/
     margin-top: 15px;
+
     bottom: 50px;
     justify-content:space-around;
     width: 100vw;
     max-width: 1440px;
     height: 700px;
     margin-top: 10%;
-
 }
 
 .central-container img{
@@ -126,10 +136,12 @@ header{
     width:50%;
     max-width: 650px;
     height: 350px;
+
     align-items:flex-start;
     bottom: 100px;
     
 }
+
 .central-container p{
 
     font-family: 'Indie Flower', cursive;
@@ -153,9 +165,11 @@ h1 {
 h2{
     font-size: 38px;
     font-family: 'Indie Flower', cursive;
+
     border-bottom: 6px solid rgb(5, 5, 63);
     margin-left: 50px;
 }
+
  .movies{
     display:flex;
     flex-wrap: wrap;
@@ -185,6 +199,15 @@ h2{
     margin-top: 5%;
     
  }
+
+
+#catalogo{
+    display:none;
+}
+#topPeliculas{
+    display:none;
+}
+ 
 
 /*Empieza la parte del footer*/
 footer{
@@ -219,11 +242,8 @@ footer p{
     left: 80px;
     align-items: flex-start;
 }
-/*Segunda vista HU2*/
 
-#catalago{
-    display:none;
-}
+/*Prueba segunda vista HU2*/
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -384,7 +404,9 @@ footer p{
        
     .menu-despegable {
         flex-direction: column;
+
         /*padding: 80%;*/
+
        /* left:0;
         top: 0;*/
         text-align:center;
@@ -433,6 +455,7 @@ footer p{
             height: 150px;
             align-items: center;  
 
+
      }
 
     .central-container p{
@@ -443,6 +466,7 @@ footer p{
         height: 150px;
         
     }
+
 
     .container{
         flex-direction: column;
@@ -481,12 +505,16 @@ footer p{
         
         }
 
+
         .container-menu{
+
             width: 100%;
 
         }
 
+
         .container-menu .menu-despegable{
+
             text-align: center;
             width: 100%;
         }
@@ -503,6 +531,7 @@ footer p{
             display: block;
         }    
          
+
      }
     
 
