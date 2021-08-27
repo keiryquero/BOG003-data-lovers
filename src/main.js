@@ -1,6 +1,7 @@
 import { filtroPeliculas } from './data.js';
 import { ordenarAño } from './data.js';
-import { reduceData } from './data.js';
+//import { reduceData } from './data.js';
+import { promedioStudio } from './data.js';
 
 import studio from './data/ghibli/ghibli.js';
 let films = studio.films;
@@ -38,8 +39,8 @@ function tarjeta1(films) {
     //console.log(tarjeta, titulo, año, imagen);
     
   }
-  return contenedorTarjeta;
-};
+  return contenedorTarjeta
+}
 
 
 // Invoca la funcion tarjeta1
@@ -60,6 +61,12 @@ tarjeta1(ordenar);
 document.getElementById("link3").addEventListener("click", () => {
 document.getElementById("ranking").appendChild(tarjeta1(films));
 });
+//let promedio = promedioStudio(films);
+document.getElementById("link3").addEventListener("click",() => {
+//document.getElementById("promedio").innerHTML = promedio
+promedioStudio(films);
+  
+  });
 
 //Permite llamar la Vista de Catologo
 document.getElementById("link2").addEventListener("click", () => {

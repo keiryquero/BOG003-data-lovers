@@ -1,4 +1,4 @@
-import { filtroPeliculas, ordenarAño } from '../src/data.js';
+import { filtroPeliculas, ordenarAño, promedioStudio} from '../src/data.js';
 
 let dataMovies = [
   {
@@ -71,6 +71,21 @@ let moviesOrdenar =[
     "rt_score": "93",
   }
 ]
+/*let promedioPuntos =[
+  {
+    "title": "My Neighbor Totoro",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
+    "release_date": "1988",
+    "rt_score": "93",
+  },
+  {
+    "title": "Only Yesterday",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a9/Only_Yesterday.jpg",
+    "release_date": "1991",
+    "rt_score": "100",
+  }
+
+]*/
 
 describe('filtroPeliculas', () => {
 
@@ -94,4 +109,14 @@ describe('ordenarAño', () => {
   it('deberia mostrar el orden de las películas por el año de mayor a menor `ordenarAño`', () => {
     expect(ordenarAño(dataMovies)).toEqual(moviesOrdenar);
   });
+});
+
+describe('promedioStudio', () => {
+  it('is a function', () => {
+    expect(typeof promedioStudio).toBe('function');
+  });
+
+  /*it('deberia mostrar el promedio del puntaje de las peliculas de Ghibli  `promedioStudio`', () => {
+    expect((dataMovies)).toEqual(promedioPuntos);
+  });*/
 });

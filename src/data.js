@@ -2,12 +2,22 @@
 export function filtroPeliculas(films){ 
    let mayorMenor= films.filter((films) => films.release_date < 2000 );
   //console.log(mayorMenor)
-  return mayorMenor;
-};
+  return mayorMenor
+}
 //Prueba del arrow function = funcion funcion flecha
   export const ordenarAño = (films) => {
   return films.sort((year1,year2) => year2.release_date - year1.release_date 
   )};
+
+   export const promedioStudio = (films) => { 
+    const suma = films.reduce((acum,item) => { 
+     return acum = acum + parseInt(item.rt_score)/20;     
+    },0);
+   return suma
+  
+  };
+  
+
 // funcion Reduce,muestra promedio de las peliculas famosas > 90 puntos
 
 //Funcion Sort, para ordenar de mayor a menor
