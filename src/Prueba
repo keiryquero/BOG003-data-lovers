@@ -1,5 +1,13 @@
-h2{
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-bottom: 6px solid rgb(5, 5, 63);
- }
+export const promedioStudio = (films) => { 
+    const suma = films.reduce((acum,item) => { 
+     return acum = acum + parseInt(item.rt_score)/20;     
+    },0);
+   return suma
+  
+  };
+  //let promedio = promedioStudio(films);
+document.getElementById("link3").addEventListener("click",() => {
+//document.getElementById("promedio").innerHTML = promedio
+promedioStudio(films);
+  
+  });
