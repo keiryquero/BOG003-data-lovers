@@ -40,10 +40,7 @@ function tarjeta1(films) {
     
   }
   return contenedorTarjeta
-}
-
-
-// Invoca la funcion tarjeta1
+}// Invoca la funcion tarjeta1
 document.getElementById("link2").addEventListener("click", () => {
 document.getElementById("container").appendChild(tarjeta1(films));
 });
@@ -59,7 +56,14 @@ tarjeta1(ordenar);
 
 //invoca funcion Reduce
 document.getElementById("link3").addEventListener("click", () => {
-document.getElementById("ranking").appendChild(tarjeta1(films));
+document.getElementById("ranking").appendChild(tarjeta1(films))
+document.getElementById("ranking").innerHTML = "";
+});
+
+const pruebafilter = reduceData(films)
+document.getElementById("btn").addEventListener("click", () => {
+document.getElementById("ranking").appendChild(tarjeta1(pruebafilter));
+    
 });
 //let promedio = promedioStudio(films);
 document.getElementById("link3").addEventListener("click",() => {
