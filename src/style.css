@@ -47,22 +47,8 @@ header{
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 5px rbg 0 0 .5;
-
-.container-menu .menu-despegable{
-    display: flex;
-    width: 80%;
-    height: 50%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items:center;
-
-    box-shadow: 0 0 6px rgb(0, 0, .5);
-    transition:transform .3s ease-in-out; /*se hace con js para que desaparezca y aparezca el menu
-    transform: translate(1%);
-    margin-right: 50%;
-    border-radius: 15px;
-
 }*/
+
 .container-menu .menu-despegable{
     display: flex;
     /*background-image: linear-gradient(to right, #4facfe 0%, #00f1fede 100%);*/
@@ -75,7 +61,6 @@ header{
     transition: all o.3s;
     /*border-radius: 15px;
     box-shadow: 0 0 6px rgba(78, 78, 236, 0.637);*/
-
 
 }
 
@@ -332,8 +317,14 @@ footer p{
    /*float: right;*/
     width: 280px;
     height: 180px;
-    
+        
 }
+.topPeliculas div{
+    justify-content:space-between;
+    flex-wrap: wrap;
+    }
+
+
 .ranking{
     display: flex;
     justify-content:space-between;
@@ -342,18 +333,11 @@ footer p{
     width: 100%;    
     max-width: 1440px;
     margin-top: 20px;
-    border-radius: 15px;
-    
-    
+    border-radius: 15px;   
     
     }
 
-.ranking div{
-    margin-top: 0;
-    margin-bottom: 0;
-    justify-items: auto;
-    flex-wrap: wrap;
-}
+
 .ranking img{
     align-items: auto;
     width: 250px;

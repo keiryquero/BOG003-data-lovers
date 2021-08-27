@@ -38,10 +38,8 @@ function tarjeta1(films) {
     //console.log(tarjeta, titulo, año, imagen);
     
   }
-  return contenedorTarjeta;
-};
-
-
+  return contenedorTarjeta
+}
 // Invoca la funcion tarjeta1
 document.getElementById("link2").addEventListener("click", () => {
 document.getElementById("container").appendChild(tarjeta1(films));
