@@ -311,6 +311,16 @@ footer p{
     float: left;
    
 }    
+#promedio_rt_score{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 600px;
+    height:45px;
+    width: 65px;
+    background-color:cyan;
+    color:black; 
+}
 .topPeliculas img{
    display: flex;
    justify-items: right;
@@ -335,7 +345,7 @@ footer p{
     margin-top: 20px;
     border-radius: 15px;   
     
-    }
+}
 
 
 .ranking img{
@@ -383,9 +393,8 @@ footer p{
 }
 
 /*Prueba de responsive en la pagina*/
-@media (max-width:900px) {
-    
-       
+@media screen and (max-width:900px) {
+          
     .menu-despegable {
         flex-direction: column;
 
@@ -457,6 +466,7 @@ footer p{
 
     }
     }
+    
 /*Prueba de responsive para dispositivos movil*/
 @media screen and (max-width:500px) {
 

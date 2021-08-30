@@ -6,26 +6,29 @@ export function filtroPeliculas(films){
   return mayorMenor;
 }
 
-// prueba con reduce = promedio de las peliculas
+  //Prueba del arrow function = funcion funcion flecha
+  export const ordenarAño = (films) => {
+    return films.sort((year1,year2) => year2.release_date - year1.release_date 
+    )};
+
+// prueba con funcion Combinada filter y sort
 export const reduceData = (films) => {
   return films.filter((films) => films.rt_score >= 93).sort((rt,rt1) => rt1.rt_score - rt.rt_score);
 };
 
-  //Prueba del arrow function = funcion funcion flecha
-  export const ordenarAño = (films) => {
-  return films.sort((year1,year2) => year2.release_date - year1.release_date 
-  )};
-
+// Promedia el puntaje de las peliculas de Ghibli
    export const promedioStudio = (films) => { 
     const suma = films.reduce((acum,item) => { 
-     return acum = acum + parseInt(item.rt_score)/20;     
+    return acum = acum + parseInt(item.rt_score)/films.length;     
     },0);
+    console.log(suma)
    return suma
+   
   
   };
   
 
-// funcion Reduce,muestra promedio de las peliculas famosas > 90 puntos
+
 
 
 
