@@ -10,6 +10,7 @@ function tarjeta1(films) {
 
   document.getElementById("container").innerHTML= "";
   const contenedorTarjeta = document.createElement("div");
+  
 
   for (var i = 0; i < films.length; i++) {
     let title = films[i].title;
@@ -18,7 +19,7 @@ function tarjeta1(films) {
     let points= films [i].rt_score;
 
     // Se crean elementos que van dentro del contenedorTarjeta
-
+    //contenedorTarjeta.setAttribute("class","tbn") 
     const tarjeta = document.createElement("div");
     const imagen = document.createElement("img");
     const titulo = document.createElement("h3");

@@ -9,10 +9,12 @@ export const ordenarAño = (films) => {
   return films.sort((year1, year2) => year2.release_date - year1.release_date
    )};
 
-// prueba con reduce = promedio de las peliculas
+// prueba con función combinada filter y sort
 export const reduceData = (films) => {
   return films.filter((films) => films.rt_score >= 93).sort((rt,rt1) => rt1.rt_score - rt.rt_score);
 };
+
+// promedia el puntaje las peliculas de Ghibli
 
 
 
