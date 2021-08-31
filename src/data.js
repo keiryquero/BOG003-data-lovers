@@ -2,19 +2,24 @@
 export function filtroPeliculas(films){ 
    let mayorMenor= films.filter((films) => films.release_date < 2000 );
   //console.log(mayorMenor)
+
   return mayorMenor;
 }
-//prueba del arrow funtion = función flecha
-export const ordenarAño = (films) => {
-  return films.sort((year1, year2) => year2.release_date - year1.release_date
-   )};
 
+//Prueba del arrow function = funcion funcion flecha
+export const ordenarAño = (films) => {
+  return films.sort((year1,year2) => year2.release_date - year1.release_date 
+  )};
+  
 // prueba con función combinada filter y sort
 export const reduceData = (films) => {
   return films.filter((films) => films.rt_score >= 93).sort((rt,rt1) => rt1.rt_score - rt.rt_score);
 };
 
-// promedia el puntaje las peliculas de Ghibli
+
+  
+
+// funcion Reduce,muestra promedio de las peliculas famosas > 90 puntos
 
 
 
