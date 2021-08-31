@@ -6,15 +6,19 @@ export function filtroPeliculas(films){
   return mayorMenor;
 }
 
+
+//Prueba del arrow function = funcion funcion flecha
+export const ordenarAño = (films) => {
+  return films.sort((year1,year2) => year2.release_date - year1.release_date 
+  )};
+  
+// prueba con función combinada filter y sort
+
   //Prueba del arrow function = funcion funcion flecha
   export const ordenarAño = (films) => {
     return films.sort((year1,year2) => year2.release_date - year1.release_date 
     )};
 
-// prueba con funcion Combinada filter y sort
-export const reduceData = (films) => {
-  return films.filter((films) => films.rt_score >= 93).sort((rt,rt1) => rt1.rt_score - rt.rt_score);
-};
 
 // Promedia el puntaje de las peliculas de Ghibli
    export const promedioStudio = (films) => { 
@@ -26,7 +30,7 @@ export const reduceData = (films) => {
    
   
   };
-  
+
 
 
 
